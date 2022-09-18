@@ -1,0 +1,318 @@
+@font-face{
+  font-family:'Square Peg';
+  font-style:normal;
+  font-weight: 400;
+  src: url("fonts/square-peg-v2-latin-regular.woff2") format('woff2'),
+       url("fonts/square-peg-v2-latin-regular.woff") format('woff'),
+       url("fonts/square-peg-v2-latin-regular") format('truetype'),
+       url("fonts/square-peg-v2-latin-regular") format('svg');
+}
+
+/* cinzel-800 - latin */
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 800;
+  src: url('fonts/cinzel-v19-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/cinzel-v19-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/cinzel-v19-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('fonts/cinzel-v19-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/cinzel-v19-latin-800.svg') format('svg'); /* Legacy iOS */
+}
+
+
+body{
+  padding:0px;
+  margin:0px;
+  width:100%;
+  overflow-x:hidden;
+}
+
+h2{
+  color:white;
+  font-family: 'Cinzel', serif;
+  font-size:30px;
+  padding:20px;
+  text-align:center;
+}
+
+.windsor{
+  margin:0px auto;
+  width:100%;
+  background-color: GoldenRod;
+}
+
+.hanovre {
+  margin:0px auto;
+  width:100%;
+  background-color: MidnightBlue;
+}
+
+.stuart {
+  margin:0px auto;
+  width:100%;
+  background-color:DarkGreen;
+}
+
+.tudor {
+  margin:0px auto;
+  width:100%;
+  background-color:DarkRed;
+}
+
+figcaption{
+  color:white;
+  text-align:center;
+  font-style:italic;
+  font-size:10px;
+}
+
+.sideNav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  right:0;
+  background-color: rgba(0,0,0,0.8);
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.3s;
+}
+
+.sideNav img{
+  margin:0 auto;
+  width:100%;
+}
+
+.sideNav article{
+  text-align:justify;
+  text-indent:30px;
+  color:white;
+  margin: 15px;
+  padding:25px;
+  line-height:30px;
+}
+
+.sideNav article h4{
+  text-align:center;
+  color:FireBrick;
+  font-family: 'Cinzel', serif;
+}
+
+.sideNav article ul{
+  list-style-type:circle;
+}
+
+.sideNav a{
+  text-decoration:none;
+  color: white;
+}
+
+.sideNav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 36px;
+}
+
+@media screen and (min-width:1000px){
+  table{
+    border-collapse:collapse;
+    text-align:center;
+  }
+  td{
+    font-family: 'Square Peg', cursive;
+    font-size:25px;
+    line-height: 30px;
+
+  }
+
+  td a{
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+  }
+  td a:hover{
+    color:DarkRed;
+  }
+  .windsor-tree-mobile{
+    display:none;
+  }
+
+  .windsor-tree{
+    display:flex;
+    margin:20px auto;
+    width:85%;
+    padding:30px;
+    justify-content:center;
+    border-radius: 50px;
+    background-color:rgba(224,165,38, 0.3);
+    border : solid 5px GoldenRod;
+  }
+}
+
+@media screen and (min-width:801px){
+  table{
+    border-collapse:collapse;
+    text-align:center;
+  }
+  td{
+    font-family: 'Square Peg', cursive;
+    font-size:25px;
+    line-height: 30px;
+
+  }
+
+  td a{
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+  }
+  td a:hover{
+    color:DarkRed;
+  }
+
+  .tudor-tree-mobile table{
+    display:none;
+  }
+  .tudor-tree{
+    display:flex;
+    margin:20px auto;
+    width:85%;
+    padding:30px;
+    justify-content:center;
+    border-radius: 50px;
+    background-color:rgba(139,0,0, 0.3);
+    border : solid 5px DarkRed;
+
+  }
+  .stuart-tree-mobile{
+    display:none;
+  }
+
+  .stuart-tree{
+    display:flex;
+    margin:20px auto;
+    width:85%;
+    padding:30px;
+    justify-content:center;
+    border-radius: 50px;
+    background-color:rgba(21,71,52, 0.3);
+    border : solid 5px DarkGreen;
+  }
+
+  .hanovre-tree-mobile{
+    display:none;
+  }
+
+  .hanovre-tree{
+    display:flex;
+    margin:20px auto;
+    width:85%;
+    padding:30px;
+    justify-content:center;
+    border-radius: 50px;
+    background-color:rgba(25,25,112, 0.3);
+    border : solid 5px MidnightBlue;
+  }
+
+}
+
+@media screen and (min-width:200px)and (max-width:1000px){
+
+  table{
+    border-collapse:collapse;
+    text-align:center;
+  }
+
+  td{
+    font-family: 'Square Peg', cursive;
+    font-size:25px;
+    line-height: 30px;
+
+  }
+  td a{
+    color: DarkRed;
+    font-weight:bold;
+    text-decoration:none;
+  }
+  .windsor-tree table{
+    display:none;
+  }
+
+  .windsor-tree-mobile{
+    display:flex;
+    margin:10px auto;
+    width:90%;
+    padding:20px;
+    justify-content:center;
+    border-radius: 50px;
+    background-color:rgba(224,165,38, 0.3);
+    border : solid 2px GoldenRod;
+  }
+
+}
+
+@media screen and (min-width:200px)and (max-width:800px){
+  table{
+    border-collapse:collapse;
+    text-align:center;
+  }
+
+  td{
+    font-family: 'Square Peg', cursive;
+    font-size:25px;
+    line-height: 30px;
+
+  }
+  td a{
+    color: DarkRed;
+    font-weight:bold;
+    text-decoration:none;
+  }
+
+  .tudor-tree table{
+    display:none;
+  }
+  .tudor-tree-mobile{
+    display:flex;
+    margin:20px auto;
+    width:85%;
+    padding:30px;
+    justify-content:center;
+    border-radius: 50px;
+    background-color:rgba(139,0,0, 0.3);
+    border : solid 2px DarkRed;
+
+  }
+
+  .stuart-tree table{
+    display:none;
+  }
+
+  .stuart-tree-mobile{
+    display:flex;
+    margin:10px auto;
+    width:90%;
+    padding:20px;
+    justify-content:center;
+    border-radius: 50px;
+    background-color:rgba(21,71,52, 0.3);
+    border : solid 2px DarkGreen;
+  }
+
+  .hanovre-tree table{
+    display:none;
+  }
+
+  .hanovre-tree-mobile{
+    display:flex;
+    margin:10px auto;
+    width:100%;
+    justify-content:center;
+    border-radius: 50px;
+    background-color:rgba(25,25,112, 0.3);
+    border : solid 2px MidnightBlue;
+  }
+}
